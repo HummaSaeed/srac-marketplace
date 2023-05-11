@@ -1,38 +1,199 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: black;
+  height: 109px;
+  padding-left: 44px;
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  
+}
+.subclass{
+  display: flex;
+  margin-right: 100px !important;
+}
+.navbardesc{
+  width: 100%;
+  background-color: black !important;
+  height: 109px;
+  padding-right: 44px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.image{
+  width: 100%;
+  height:400;
+}
+.main {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+.card_row{
+  display: flex;
+}
+.add_container {
+  height: 160px;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #eceaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchbar {
+  width: 250px;
+  height:33px;
+  background-color: white;
+  
+}
+.searchbar > input {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  color: black;
+  border:0px;
+  font-family: Inter;
+  font-size: 23px;
+}
+.language{
+  color:white;
+  font-weight: 600;
+  margin-right: 20px;
+  background-color: black;
+  border:0px;
+  font-size: 16px;
+}
+.language:focus{
+  outline: none;
+}
+#targetLanguage{
+display:none;
+}
+.search_button {
+  border: 0px;
+  border-radius: 2px;
+  padding:10px 15px;
+  background-color: #60efff;
+}
+.book_button {
+  border: 0px;
+  border-radius: 2px;
+  padding:10px 15px;
+  background-color: #60efff;
+}
+.btn-primary{
+  background-color: black;
   color: white;
+  font-size: 35px;
+}
+.btn{
+  width:365px;
+  height:70px;
+  border-radius: 11px;
+}
+.btn-calculate{
+  border-radius: 0px;
+  height:50px;
+  font-size: 20px;
+  width: 110px;
+  margin-left: 50px;
+}
+.btn-primary.btn-edit{
+  width:253px;
+  height:48px;
+  font-size: 24px;
+}
+.form-input{
+  height:46px;
+  width: 100%;
+  border: 0px solid grey;
+  outline:none;
+  font-size: 20px;
+  padding-left: 10px;
+  background-color: rgb(222, 223, 231);
+}
+.form-input:focus{
+  background-color: white;
+  border-color: rgba(146,151,194,1);
+}
+.card_data{
+  width: 70%;
+  align-items: center;
+  display:flex;
+  
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 786px) {
+  .navbar{
+    width: 90%
+  }
+  .navbardesc{
+padding-left: 50px;
+  }
+  .subclass{
+    display: none;
+  }
+  .hamburger {
+    display: none;
+    width: 0px;
+  }
+  .searchbar{
+    width: 70%;
+  }
+  .card_data{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    align-self: center;
+  }
+  .form-input{
+    display: flex;
+    width: 94%;
+  }
+  .card_row{
+    flex-direction: column;
+  }
+  .width-50{
+    width: 100%;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .button-light{
+    width:'100%'
+  }
+  .align{
+    align-items: center;
+    justify-content: center;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-light{
+  padding:20px 10px;
+  border:1px solid black;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 200px;
+  
+}
+.btn-light-margin{
+  margin-right: 15px;
+}
+.btn-down-payment{
+  margin-top: 10px;
+}
+.footer{
+  background-color: black;
+  height: 109px;
+  padding-left: 44px;
+ width: 100%;
+ margin-top: 40px;
 }

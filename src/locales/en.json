@@ -1,0 +1,17 @@
+{
+    "booking":"Book",
+    "BookNow":"Book Now",
+    "highline":"Highline",
+    "price":"Price",
+    "permonth":"permonth",
+    "deposit":"deposit",
+    "automatic":"automatic",
+    "brand":"Brand",
+    "model":"Model",
+    "category":"Category",
+    "kilometer":"Kilometers",
+    "transmissiontype":"Automatic",
+    "bodytype":"Body Type",
+    "condition":"condition",
+    "paymentoption":"Payment Options"
+}
