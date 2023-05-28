@@ -15,7 +15,6 @@ const ProductDetails = () => {
   const { t } = useTranslation();
   const [name, setname] = useState("");
   const handleClick = () => {
-    setshowData(true);
     window.open("https://forms.gle/fpSMnrpco3HMfsbj6", "_blank");
   };
   const handleNameChange = (e) => {
@@ -27,7 +26,7 @@ const ProductDetails = () => {
     <>
       <DetailNavbar />
       <img
-        src={`http://localhost:8000${selectedvehicle.img}`}
+        src={`https://admin.srac.me${selectedvehicle.img}`}
         alt=""
         className="image"
         style={{ width: "600", height: 400, maxHeight: 400 }}
@@ -72,7 +71,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      {showData && (
+      {/* {showData && (
         <div className="detail__card">
           <p className="details head">Calculate your Installments</p>
 
@@ -108,7 +107,7 @@ const ProductDetails = () => {
             ))}
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 };

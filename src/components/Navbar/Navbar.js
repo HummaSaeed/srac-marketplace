@@ -30,7 +30,7 @@ const Navbar = () => {
           <option value="en">English</option>
           <option value="ar">Arabic</option>
         </select>
-        <button className="book_button">{t("booking")}</button>
+        <button className="book_button" onClick={()=>{window.open("https://forms.gle/fpSMnrpco3HMfsbj6", "_blank")}}>{t("booking")}</button>
       </div>
     </div>
   );

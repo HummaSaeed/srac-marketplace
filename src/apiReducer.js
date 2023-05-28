@@ -22,6 +22,7 @@ const apiReducer = (state = initialState, action) => {
       return {
         ...state,
         isLoading: false,
+        error:null,
         data: action.payload,
       };
     case constants.API_FAILURE:

@@ -8,7 +8,7 @@ const CardComponent = ({vehicle, index}) => {
   
   return (
     <Card className="card__container" >
-      <Card.Img variant="top" src={`http://localhost:8000${vehicle.img}`} style={{height:200,width:280}} />
+      <Card.Img variant="top" src={`https://admin.srac.me${vehicle.img}`} style={{height:200,width:280}} />
       <Card.Body className="card__body">
         <div className="card__content">
           <span className="header">{vehicle.name}</span>
